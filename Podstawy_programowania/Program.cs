@@ -18,7 +18,7 @@ namespace Podstawy_programowania
             Console.WriteLine("Podaj b.");
             b = int.Parse(Console.ReadLine());
 
-            //https://pl.wikipedia.org/wiki/Algorytm_Euklidesa
+            //https://pl.wikipedia.org/wiki/Algorytm_Euklidesa - sekcja odejmowanie
 
             Console.WriteLine("Największy wspólny dzielnik (NWD) to: " + a);
         }
