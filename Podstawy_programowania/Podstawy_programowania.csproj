@@ -8,4 +8,8 @@
   <ItemGroup>
     <PackageReference Include="GitHub" Version="1.16.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Zadania_Domowe\" />
+    <Folder Include="Training\" />
+  </ItemGroup>
 </Project>

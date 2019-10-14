@@ -33,6 +33,13 @@ namespace Podstawy_programowania
             {
                 Console.WriteLine("Podałeś błędnie dane.");
             }
+
+            if (a1 < 0 || b1 < 0)
+            {
+                Console.WriteLine("Wymiar prostokąta musi być liczbą dodatnią.");
+                return;
+            }
+
             float pole_prostokata = a1 * b1; //obliczenie pola prostokąta
             float obwod_prostokata = (2 * a1) + (2 * b1);
 

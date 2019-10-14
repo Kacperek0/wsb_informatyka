@@ -6,21 +6,13 @@ namespace Podstawy_programowania
     {
         static void Main(string[] args)
         {
+            //var iteracyjny_Algorytm_Euklidesa = new Iteracyjny_Algorytm_Euklidesa(); //Wywołanie programu Iteracyjny Algorytm Euklidesa
 
-            /*Napisać program obliczania największego wspólnego dzielnika dwóch dodatnich liczb całkowitych.
-             * Wykorzystać algorytm Euklidesa nie używając operacji dzielenia.
-             */
+            //var zd = new Zadanie_Domowe_II_laby(); //Wywołanie zadania domowego z II labów
 
-            int a, b;
+            var sc = new Training.S_C_R_D();
 
-            Console.WriteLine("Podaj a.");
-            a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Podaj b.");
-            b = int.Parse(Console.ReadLine());
 
-            //https://pl.wikipedia.org/wiki/Algorytm_Euklidesa - sekcja odejmowanie
-
-            Console.WriteLine("Największy wspólny dzielnik (NWD) to: " + a);
         }
     }
 }
