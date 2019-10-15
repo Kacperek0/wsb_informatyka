@@ -1,1 +1,2 @@
-# wsb_informatyka
+# WSB w Poznaniu
+Informatyka, spec. programowanie
