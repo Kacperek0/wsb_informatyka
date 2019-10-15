@@ -12,4 +12,7 @@
     <Folder Include="Zadania_Domowe\" />
     <Folder Include="Training\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Python\EmptyTextFile.txt" />
+  </ItemGroup>
 </Project>

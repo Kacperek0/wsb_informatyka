@@ -10,7 +10,9 @@ namespace Podstawy_programowania
 
             //var zd = new Zadanie_Domowe_II_laby(); //Wywołanie zadania domowego z II labów
 
-            var sc = new Training.S_C_R_D();
+            //var sc = new Training.S_C_R_D(); //tbc
+
+            //var choinka = new Training.Choinka(); //też tbc xD
 
 
         }

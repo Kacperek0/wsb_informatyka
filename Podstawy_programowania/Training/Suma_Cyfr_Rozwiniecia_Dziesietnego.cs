@@ -16,7 +16,7 @@ namespace Podstawy_programowania.Training
             int result;
             int.Parse(number);
 
-            for() //spróbuj to zapakować w for loopa, na pewno się da
+            //for() //spróbuj to zapakować w for loopa, na pewno się da
 
             //while (i != 0)
             //{
