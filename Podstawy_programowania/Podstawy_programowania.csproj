@@ -11,8 +11,13 @@
   <ItemGroup>
     <Folder Include="Zadania_Domowe\" />
     <Folder Include="Training\" />
+    <Folder Include="w3resource_tasks\" />
+    <Folder Include="w3resource_tasks\Basic_Exercises\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Python\EmptyTextFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="w3resource_tasks\Basic_Exercises\EmptyClass.cs" />
   </ItemGroup>
 </Project>

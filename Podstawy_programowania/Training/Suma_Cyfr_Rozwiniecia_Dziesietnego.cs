@@ -13,7 +13,7 @@ namespace Podstawy_programowania.Training
             Console.WriteLine("Podaj dowolną liczbę naturalną ");
             string number = Console.ReadLine();
             int i = int.Parse(number);
-            int result;
+            //int result;
             int.Parse(number);
 
             //for() //spróbuj to zapakować w for loopa, na pewno się da

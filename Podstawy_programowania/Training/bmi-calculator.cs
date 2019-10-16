@@ -2,9 +2,9 @@
 
 namespace Projekt1
 {
-    class Program
+    public class bmi_calc
     {
-        static void Main(string[] args)
+        public bmi_calc()
         {
             Console.WriteLine("Hi, let's count your BMI!\n");
             Console.WriteLine("Enter your height in centimeters: ");
