@@ -14,7 +14,7 @@ namespace Podstawy_programowania
 
             //var choinka = new Training.Choinka(); //też tbc xD
 
-            var day1 = new w3resource_tasks.Basic_Exercises.Day1();
+            var day2 = new w3resource_tasks.Basic_Exercises.Day2();
 
 
         }

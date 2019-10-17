@@ -13,6 +13,7 @@
     <Folder Include="Training\" />
     <Folder Include="w3resource_tasks\" />
     <Folder Include="w3resource_tasks\Basic_Exercises\" />
+    <Folder Include="Laboratoria\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Python\EmptyTextFile.txt" />
