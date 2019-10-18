@@ -2,3 +2,5 @@
 Informatyka, spec. programowanie
 
 Repo tworzone w czasie studiów
+
+Test xD
