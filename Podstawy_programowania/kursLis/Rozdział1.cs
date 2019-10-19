@@ -9,6 +9,8 @@ namespace Podstawy_programowania.kursLis
         {
             Console.WriteLine("To jest napis");
             ///<value>They've asked to write like this in a book</value>
+
+            // test githuba
         }
     }
 }
