@@ -171,9 +171,8 @@ namespace Podstawy_programowania.Laboratoria
                     break;
             }
 
-            int i = 1;
 
-            for (i = 1; i <= 10; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 Console.Write(i + " ");
             }
