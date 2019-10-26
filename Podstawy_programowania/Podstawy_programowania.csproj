@@ -15,6 +15,7 @@
     <Folder Include="w3resource_tasks\Basic_Exercises\" />
     <Folder Include="Laboratoria\" />
     <Folder Include="kursLis\" />
+    <Folder Include="w3resource_tasks\Loops\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Python\EmptyTextFile.txt" />
