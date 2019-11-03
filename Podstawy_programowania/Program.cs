@@ -18,7 +18,7 @@ namespace Podstawy_programowania
 
             //var init = new w3resource_tasks.Basic_Exercises.Day3();
 
-            var day4 = new w3resource_tasks.Loops.Day1();
+            var day4 = new w3resource_tasks.Basic_Exercises.Day5();
 
         }
 

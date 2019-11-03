@@ -57,6 +57,8 @@ namespace Podstawy_programowania.w3resource_tasks.Basic_Exercises
                 Console.Write("{0} ", c1);
             }
 
+            Console.ReadKey();
+            Console.Clear();
             Console.WriteLine();
             //14.Write a C# program to convert from celsius degrees to Kelvin and Fahrenheit.
 
