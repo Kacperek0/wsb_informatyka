@@ -60,7 +60,7 @@ namespace Podstawy_programowania
 
             //var lab5 = new Laboratoria.lab5_2();
 
-            var lab6 = new Laboratoria.lab6_3();
+            //var lab6 = new Laboratoria.lab6_3();
 
             /* Przywoływanie namespace'a:
              
@@ -69,6 +69,8 @@ namespace Podstawy_programowania
             Prog x = new Prog();
             Console.WriteLine("Wynik działania: {0}", x.add(2, 5));
             */
+
+            var menu = new Training.Menu();
         }
 
     }
