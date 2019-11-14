@@ -8,6 +8,10 @@ namespace Podstawy_programowania.Training
             
             string[] loginList = new string[] {"admin", "kacper", "tata"};
             string[] passwordList = new string[] { "admin", "123456", "mama" };
+            string[] newLoginList = new string[loginList.Length];
+            string[] newPasswordList = new string[passwordList.Length];
+            loginList.CopyTo(newLoginList, 0);
+            passwordList.CopyTo(newPasswordList, 0);
 
             while (true)
             {
@@ -35,26 +39,32 @@ namespace Podstawy_programowania.Training
                             Console.ResetColor();
                             Console.WriteLine("Please input login:");
                             userLoginInput = Console.ReadLine();
+                            //userLoginInput = null;
                             Console.WriteLine("Please input your password:");
                             userPasswordInput = Console.ReadLine();
-                            for (int i = 0; i < loginList.Length; i++)
+                            //userPasswordInput = null;
+                            for (int i = 0; i < newLoginList.Length; i++)
                             {
-                                if (loginList[i] == userLoginInput && passwordList[i] == userPasswordInput)
+                                try
                                 {
-                                    logInCheck = true;
+                                    if (newLoginList[i] == userLoginInput && newPasswordList[i] == userPasswordInput)
+                                    {
+                                        logInCheck = true;
+                                    }
+
                                 }
+                                catch (NullReferenceException)
+                                {
+                                    Console.WriteLine("You cannot input null. Sorry.");
+                                }
+                               
                                 
                             }
                             if (logInCheck)
                             {
-                                string newUserLogin, newUserPassword;
-
                                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                                 Console.WriteLine("You have been logged in succesfully.");
                                 Console.ResetColor();
-                                Console.WriteLine("\nPlease enter new user login:");
-                                newUserLogin = Console.ReadLine();
-                                //loginList;
                                 break;
                             }
                             else
@@ -66,11 +76,21 @@ namespace Podstawy_programowania.Training
                         break;
                     }
 
-                    if (userMenuSelection == 2)
+                    if ((newLoginList != null) && (userMenuSelection == 2))
                     {
+                        string newUserLogin, newUserPassword;
+
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine("Welcome to the sign in screen.");
                         Console.ResetColor();
+
+                        Console.WriteLine("\nPlease enter new user login:");
+                        newUserLogin = Console.ReadLine();
+                        newLoginList[^1] = newUserLogin;
+                        Console.WriteLine(newLoginList[^1]);
+
+                        Console.WriteLine("");
+                        
 
                         break;
                     }
