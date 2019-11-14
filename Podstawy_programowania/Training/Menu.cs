@@ -8,8 +8,8 @@ namespace Podstawy_programowania.Training
             
             string[] loginList = new string[] {"admin", "kacper", "tata"};
             string[] passwordList = new string[] { "admin", "123456", "mama" };
-            string[] newLoginList = new string[loginList.Length];
-            string[] newPasswordList = new string[passwordList.Length];
+            string[] newLoginList = new string[loginList.Length + 1];
+            string[] newPasswordList = new string[passwordList.Length + 1];
             loginList.CopyTo(newLoginList, 0);
             passwordList.CopyTo(newPasswordList, 0);
 
@@ -19,8 +19,7 @@ namespace Podstawy_programowania.Training
                 string userMenuSelectionInput;
                 ushort userMenuSelection;
                 Console.WriteLine("Welcome, to the menu. Please tell me what you'd like to do now");
-                Console.WriteLine("\n1. Log in\n" + "2. Register\n" + "3. To be completed");
-                Console.WriteLine();
+                Console.WriteLine("\n1. Log in\n" + "2. Register\n" + "3. To be completed\n");
                 Console.WriteLine("Please enter the number you'd like to follow:");
                 userMenuSelectionInput = Console.ReadLine();
                 try
@@ -38,27 +37,19 @@ namespace Podstawy_programowania.Training
                         {
                             Console.ResetColor();
                             Console.WriteLine("Please input login:");
-                            userLoginInput = Console.ReadLine();
-                            //userLoginInput = null;
+                            //userLoginInput = Console.ReadLine();
+                            userLoginInput = null;
                             Console.WriteLine("Please input your password:");
-                            userPasswordInput = Console.ReadLine();
-                            //userPasswordInput = null;
+                            //userPasswordInput = Console.ReadLine();
+                            userPasswordInput = null;
                             for (int i = 0; i < newLoginList.Length; i++)
                             {
-                                try
-                                {
-                                    if (newLoginList[i] == userLoginInput && newPasswordList[i] == userPasswordInput)
-                                    {
-                                        logInCheck = true;
-                                    }
 
-                                }
-                                catch (NullReferenceException)
+                                if (newLoginList[i] == userLoginInput && newPasswordList[i] == userPasswordInput && newLoginList[i] != null)
                                 {
-                                    Console.WriteLine("You cannot input null. Sorry.");
+                                    logInCheck = true;
                                 }
-                               
-                                
+
                             }
                             if (logInCheck)
                             {
@@ -76,7 +67,7 @@ namespace Podstawy_programowania.Training
                         break;
                     }
 
-                    if ((newLoginList != null) && (userMenuSelection == 2))
+                    if (userMenuSelection == 2)
                     {
                         string newUserLogin, newUserPassword;
 
