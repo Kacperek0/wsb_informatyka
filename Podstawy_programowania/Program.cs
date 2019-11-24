@@ -70,7 +70,8 @@ namespace Podstawy_programowania
             Console.WriteLine("Wynik działania: {0}", x.add(2, 5));
             */
 
-            var menu = new Training.minusOne();
+            var functions = new Laboratoria.lab7_4();
+
         }
 
     }
