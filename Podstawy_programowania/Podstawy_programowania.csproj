@@ -17,6 +17,7 @@
     <Folder Include="kursLis\" />
     <Folder Include="w3resource_tasks\Loops\" />
     <Folder Include="Training\Functions\" />
+    <Folder Include="AdventOfCode\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Python\EmptyTextFile.txt" />
@@ -24,5 +25,10 @@
   <ItemGroup>
     <Compile Remove="w3resource_tasks\Basic_Exercises\EmptyClass.cs" />
     <Compile Remove="kursLis\EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Biblioteki">
+      <HintPath>..\..\..\Biblioteki.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

@@ -70,7 +70,8 @@ namespace Podstawy_programowania
             Console.WriteLine("Wynik działania: {0}", x.add(2, 5));
             */
 
-            var functions = new Laboratoria.lab7_4();
+            //var functions = new AdventOfCode.Day1();
+            var choinka = new Laboratoria.lab8();
 
         }
 
